@@ -1,0 +1,34 @@
+def factorial(n):
+  if n == 0:
+    return 1
+  else:
+    return n * factorial(n - 1)
+def fibo(n):
+  if n==1:
+    return 0
+  elif n==2:
+    return 1
+  else:
+    n3=int(fibo(n-1))+int(fibo(n-2))
+    return n3 
+n=int(input("Enter the number:"))
+print factorial(n)
+for i in range(0,n):
+  print(fibo(n))
+
+
+
+def count_up_and_low(word):
+    u = [x for x in word if x.isupper()]
+    l = [x for x in word if x.islower()]
+    print(len(u),len(l))
+count_up_and_low("How are YOU")
+string=raw_input("Enter string:")
+count=0
+for i in string:
+      count=count+1
+print("Length of the string is:")
+print(count)
+print(string+"ing")
+string.replace(string[0],'$')
+print(string)
