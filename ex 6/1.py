@@ -13,10 +13,10 @@ for i in range(0,len(a)):
     for j in range(0,2):
         print(a[i][j])
 a=list(a)
-a[2]=str(['Sam',82,79,88,97,99])
+a[2]=list(['Sam',82,79,88,97,99])
 print(a)
 a[0][3]=95
 print(a)
-x=str("73,80,85")
-a=a.append(x)
+x=list([[73,80,85]])
+a.extend(x)
 print(a)
